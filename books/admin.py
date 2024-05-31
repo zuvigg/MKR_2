@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Author, Book
+from .models import Recipe, Category
 
 
 class BookAdmin(admin.ModelAdmin):
@@ -10,5 +10,6 @@ class BookAdmin(admin.ModelAdmin):
     fields = ['title', 'authors', 'publication_date', 'price']
 
 
-admin.site.register(Author)
-admin.site.register(Book, BookAdmin)
+
+admin.site.register(Recipe)
+admin.site.register(Category)
